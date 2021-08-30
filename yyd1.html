@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>나만의 일기장</title>
+        <h1 style="color: royalblue;">나만의 일기장</h1>
+        <style>
+            td, th {border: solid 1px}
+            table {border-collapse: collapse;}
+        </style>
+    </head>
+    <body>
+        <p style="color: royalblue;">일기 쓰기</p>
+        <div style="width:100%; text-align: right;">
+        <button style="background-color: cornflowerblue;" onclick="moveForm1()">일기쓰기</button>
+        <button style="background-color: cornflowerblue;" onclick="moveForm()">일기보기</button>
+        </div>
+        <table style="width: 100%;">
+        <tr style="background-color: royalblue;">
+            <th style="color: white;">번호</th>
+            <th style="color: white;">제목</th>
+            <th style="color: white;">날짜</th>
+        </tr>
+        <tr >
+        <tbody style="color: royalblue;" id="rows"></tbody>
+        </tr>
+    </table>
+        
+
+
+
+
+        <script type="text/javascript" src="yyd1.js"></script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>나만의 일기장</title>
+        <h1 style="color: royalblue;">나만의 일기장</h1>
+        <style>
+            td, th {border: solid 1px}
+            table {border-collapse: collapse;}
+        </style>
+    </head>
+<body>
+    <h2 style="color: royalblue;">일기 내용</h2>
+<table style="width: 100%;">
+    
+  <tr style="background-color: royalblue;">
+    <th style="color: white;">제목</th>
+    <td style="color: white;" align="center"><p id="title"></p></td>
+  
+    <th style="color: white;">날씨</th>
+    <td style="color: white;" style="width: 10%;" align="center"><p id="weather"></p></td>
+  
+    <th style="color: white;">날짜</th>
+    <td style="color: white;" style="width: 20%;" align="center"><p id="date"></p></td>
+  </tr>
+  <tr style="background-color: cornflowerblue;">
+    <th style="color: white;" >내용</th>
+    <td style="color: white;" colspan="5" align="center">
+      <pre id=contents></pre>
+    </td>
+  </tr>
+</table>
+<div style="width:100%; text-align: right;">
+  <button style="background-color: cornflowerblue;" onclick="window.history.back()">목록</button>
+  <button style="background-color: cornflowerblue;" onclick="removeContent()">삭제</button>
+</div>
+
+</body>
+<script type="text/javascript" src="yyd3.js"></script>
+</html>
